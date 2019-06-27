@@ -1,6 +1,10 @@
-# Bork
+# BorkBot (Bork)
+<img src='https://ryan778.github.io/images/bork.png' alt='Bork Bork!' width=256px/>
+<br/>
 
-![Bork bork!](https://ryan778.github.io/images/bork.png)
+&nbsp; 
+Meet Bork. 
+<br/>
 Discord is for you and your friends. But wait, this is the internet! You don't have any friends! (/s...?)
 This is where Bork comes in. He'll be your friend. Friend...?
 
