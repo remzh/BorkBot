@@ -2,8 +2,7 @@
 <img src='https://ryan778.github.io/images/bork.png' alt='Bork Bork!' width=256px/>
 <br/>
 
-&nbsp; 
-Meet Bork. 
+**Meet Bork.**
 <br/>
 Discord is for you and your friends. But wait, this is the internet! You don't have any friends! (/s...?)
 This is where Bork comes in. He'll be your friend. Friend...?
@@ -41,16 +40,22 @@ Potentially a reference to [Stardew Valley](https://stardewvalleywiki.com/Animal
 All commands are prefixed with **bork**. Who needs random and confusing symbols?
 
 `bork bork`: bork! (replacement for ping)
+
 `bork status`: shows your friendship status (with pictures!!)
 
+`bork help`: doesn't give help, decreases friendship (-3) because you thought you could ask bork for help (no, you can't)
+
 `bork vc`: joins bork to your voice channel. He'll meow randomly. 
+
 `bork lvc`: makes bork leave the voice channel, can be used by anyone. Decreases friendship because Bork doesn't like that (-3). 
 
-`bork pet`: pets Bork. Increases friendship (+5). 5 minute cooldown. 
-`bork poke`: pokes Bork. Decreases friendship (-5). 5 minute cooldown. 
-`bork slap`: slaps Bork. Significantly decreases friendship (-20). 10 minute cooldown. 
+`bork pet`: pets Bork. Increases friendship (+5). 30 second cooldown. 
 
-`bork stab`: attempts to stab Bork. If you succeed, Bork will die and leave the server. However, if you fail, you'll be kicked from the server. Note that Bork is very aggressive when need be, which is why there's a 98% chance that you'll be the one kicked.
+`bork poke`: pokes Bork. Decreases friendship (-5). 3 minute cooldown. 
+
+`bork slap`: slaps Bork. Significantly decreases friendship (-30). 10 minute cooldown. 
+
+`bork stab`: attempts to stab Bork. If you succeed, Bork will die and leave the server. However, if you fail, you'll be kicked from the server. Note that Bork is very aggressive when need be, which is why there's a 98% chance that you'll be on the losing side. 
 
 ## Self-hosting
 - You'll need to have NodeJS on the machine you're running Bork. 

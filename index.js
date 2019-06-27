@@ -1,5 +1,5 @@
 // Invite my bot: https://discordapp.com/api/oauth2/authorize?client_id=593866081333149706&permissions=201583616&scope=bot
-let botVer = 'v0.1 pre'; //v(major).(minor).(patch) ((build))
+let botVer = 'v1'; //v(major).(minor).(patch) ((build))
 let cmdPrefix = 'bork ';
 let port = process.env.PORT || 1337;
 
@@ -83,11 +83,15 @@ if(mf.slice(0, cmdPrefix.length).toLowerCase() === cmdPrefix){//Command
   let mspl = mf.split(' '); //message split (as commands generally work like this)
   logCmd(msg);
   switch(mspl[0].toLowerCase()){  
+    case 'help': 
+      msg.channel.send('go read the readme, bork');
+      friendshipStatus[msg.author.id] -= 3; 
+      break;
     case 'bork': 
       msg.channel.send(`:cat: Bork! (*${Date.now() - msg.createdTimestamp}ms*)`);
       break;
     case 'pet': 
-      if(Date.now() > cooldowns[msg.author.id+'-pet'] + 300000 || !cooldowns[msg.author.id+'-pet']){
+      if(Date.now() > cooldowns[msg.author.id+'-pet'] + 30000 || !cooldowns[msg.author.id+'-pet']){
         msg.channel.send(`Bork!`); 
         friendshipStatus[msg.author.id] += 5; 
         cooldowns[msg.author.id+'-pet'] = Date.now(); 
@@ -96,7 +100,7 @@ if(mf.slice(0, cmdPrefix.length).toLowerCase() === cmdPrefix){//Command
         msg.channel.send(`Too many pets!`)}
       break;
     case 'poke': 
-      if(Date.now() > cooldowns[msg.author.id+'-poke'] + 300000 || !cooldowns[msg.author.id+'-poke']){
+      if(Date.now() > cooldowns[msg.author.id+'-poke'] + 180000 || !cooldowns[msg.author.id+'-poke']){
         msg.channel.send(`bOrk!`); 
         friendshipStatus[msg.author.id] -= 5; 
         cooldowns[msg.author.id+'-poke'] = Date.now(); 
@@ -107,7 +111,7 @@ if(mf.slice(0, cmdPrefix.length).toLowerCase() === cmdPrefix){//Command
     case 'slap': 
       if(Date.now() > cooldowns[msg.author.id+'-slap'] + 600000 || !cooldowns[msg.author.id+'-slap']){
         msg.channel.send(`bORk!!!!`); 
-        friendshipStatus[msg.author.id] -= 20; 
+        friendshipStatus[msg.author.id] -= 30; 
         cooldowns[msg.author.id+'-slap'] = Date.now(); 
       }
       else{
@@ -125,6 +129,20 @@ if(mf.slice(0, cmdPrefix.length).toLowerCase() === cmdPrefix){//Command
       else{
         msg.channel.sendFile(path.join(__dirname, 'images', 'very happy.png'))}
       break; 
+    case 'stab': 
+      if(Math.random() < 0.98){
+        msg.member.kick().then(res => {
+          msg.channel.send('BOOORRKKK!!! \\*attacking*\n*(The user attempted to stab Bork, but got stabbed back and is now kicked from the server.*'); 
+        }).catch(err => {
+          msg.channel.send('*(Cannot kick user due to insufficient permissions. You\'ve lost 1,000 friendship points with Bork.)*')
+          friendshipStatus[msg.author.id] -= 1000; 
+        }); 
+      }
+      else{
+        msg.channel.send('bork? booooorkkkkk.... :\'(\n*(Bork was successfully stabbed)*')
+        msg.guild.leave(); 
+      }  
+      break;
     case 'vc':
       if(msg.member.voiceChannel){
         msg.member.voiceChannel.join()
@@ -142,6 +160,7 @@ if(mf.slice(0, cmdPrefix.length).toLowerCase() === cmdPrefix){//Command
       if(voiceConnection){
         voiceConnection.disconnect(); 
         delete voiceConnection;
+        friendshipStatus[msg.author.id] -= 3; 
         msg.channel.send(`Borked out of the borking channel!`);
       }
       break;
