@@ -4,37 +4,44 @@
 
 **Meet Bork.**
 <br/>
-Discord is for you and your friends. But wait, this is the internet! You don't have any friends! (/s...?)
+Discord is for you and your friends. But wait, this is the internet! You don't have any friends, right?
+
 This is where Bork comes in. He'll be your friend. Friend...?
 
 ## About Bork
 ![Discord Hack Week](https://cdn-images-1.medium.com/max/2560/1*lh6NS8hx0pu5mlZeSqnu5w.jpeg)
-Bork is a cat for Discord Hack Week. Why isn't he a dog? Good question, I don't know. I just like cats?
+Bork is a cat bot for Discord Hack Week. Why isn't he a dog? Good question, I don't know. I just like cats?
 It's also a common(?) saying that dogs tend to think of us as gods, while cats think of themselves of gods. You better pay attention to Bork!
 
-To ensure this, Bork has a multitude of "features" that help ensure you'll never forget about Bork. Bork will bork to you, you'll have to bork back to Bork, Bork will sometimes bork in French, and a few other tidbits.
+To ensure this, Bork has a multitude of "features" that help ensure you'll never forget about Bork. Bork will bork to you, you'll have to bork back to Bork, Bork will sometimes bork in French, and a few other tidbits. Don't like Bork? Stab him! He'll probably beat you up though...
 
 **Why "Bork"?**
 It's an inside joke. Bork sounds like "bark", but bork is most definitely a cat. 
 Bork's also both a verb and a noun, which means this readme will be extra confusing for everyone (see above). Yay!
 
+If you want to see some of Bork's features without actually going through the trouble of setting up Bork, check out [the screenshots](https://github.com/Ryan778/BorkBot/tree/master/screenshots). 
+
 ## Features
 
-### Talk to and/or about Bork!
-If you don't use "bork" in your messages at least every six messages, Bork won't let you talk until you do. You won't ever forget him! (Using commands count as "borking" to bork)
+### Talk to (or about) Bork!
+If you don't use "bork" in your messages at least every six messages, **Bork won't let you talk until you do**. You won't ever forget him! (Using commands count as "borking" to bork)
+
 If you're good friends with Bork (>=100 friendship), then you only have to use "bork" every twelve messages. 
 
 ### Random Borks
 Everytime someone says anything, there's a relatively small (8%) chance that Bork will bork up and say "bork". 
-If Bork is in a voice channel (see commands), he'll also meow randomly. 
+If Bork is in a voice channel (see commands), he'll also meow randomly for no reason. 
 
 ### French Bork
-Bork is fluent in French, and will on occasion (10%) translate your messages into French. 
+Bork is fluent in French, and will on occasion (10%) translate your messages into French for no reason. 
 If Bork doesn't like you (<0 friendship), then he'll also delete your message so your other friends won't understand you (unless they speak French, of course)
 
 ### Bork Loves You
 If you get your friendship with Bork to 1,000, then he'll love you. Forever. That's right, once you reach 1,000, then the friendship can no longer go down no matter how many times you poke or slap him (trying to stab him will still make him retaliate). Other than that, not much else happens. 
 Potentially a reference to [Stardew Valley](https://stardewvalleywiki.com/Animals#Cat_or_Dog)
+
+### Borkship
+At the heart of Bork is friendship points, already briefly mentioned above. Why? Because currency is overrated. Using `bork status` lets you see what Bork things of you (with pictures too!!!), and various commands can change your friendship with Bork. Does it actually mean anything? Not really. There's a few advantages here and there, but that's about it.
 
 ### Commands
 All commands are prefixed with **bork**. Who needs random and confusing symbols?
@@ -55,7 +62,9 @@ All commands are prefixed with **bork**. Who needs random and confusing symbols?
 
 `bork slap`: slaps Bork. Significantly decreases friendship (-30). 10 minute cooldown. 
 
-`bork stab`: attempts to stab Bork. If you succeed, Bork will die and leave the server. However, if you fail, you'll be kicked from the server. Note that Bork is very aggressive when need be, which is why there's a 98% chance that you'll be on the losing side. 
+`bork stab`: attempts to stab Bork. If you succeed, Bork will die and leave the server. However, if you fail, you'll be kicked from the server. 
+
+Bork is very aggressive when need be, which is why there's a 98% chance that you'll be on the losing side. Still, feel free to try! *If someone unkickable (due to permissions) tries to stab Bork, they'll lose 1,000 friendship points instead.*
 
 ## Self-hosting
 - You'll need to have NodeJS on the machine you're running Bork. 
