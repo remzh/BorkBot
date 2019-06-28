@@ -15,7 +15,7 @@ It's also a common(?) saying that dogs tend to think of us as gods, while cats t
 
 To ensure this, Bork has a multitude of "features" that help ensure **you'll never forget about Bork**. Bork will bork to you, you'll be forced to bork back to Bork, Bork will sometimes bork in other languages, and a few other tidbits. In fact, this readme has exactly 100 borks! Don't borking believe it? CTRL+F! Don't like Bork? You can try to stab him! If you succeed (you probably won't), then Bork will leave forever D: 
 
-###Why "Bork"? What's your obsession?###
+### Why "Bork"? What's your obsession? ###
 
 It's an inside joke. Bork sounds like "bark", but Bork is most definitely a cat. Bork was originally a verb, but now Bork's also a name after a friend named their Pokemon trainer Bork and I named my Stardew Valley cat Bork. Bork borks a lot. 
 
