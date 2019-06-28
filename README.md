@@ -13,7 +13,7 @@ This is where Bork comes in. He'll be your friend. Friend...?
 Bork is a cat bot for Discord Hack Week. Why isn't he a dog? Good question, I don't know. I just like cats?
 It's also a common(?) saying that dogs tend to think of us as gods, while cats think of themselves of gods. You better pay attention to Bork!
 
-To ensure this, Bork has a multitude of "features" that help ensure you'll never forget about Bork. Bork will bork to you, you'll have to bork back to Bork, Bork will sometimes bork in French, and a few other tidbits. Don't like Bork? Stab him! He'll probably beat you up though...
+To ensure this, Bork has a multitude of "features" that help ensure you'll never forget about Bork. Bork will bork to you, you'll have to bork back to Bork, Bork will sometimes bork in other languages, and a few other tidbits. Don't like Bork? You can try to stab him! If you succeed (you probably won't), then Bork will leave forever D: 
 
 **Why "Bork"?**
 It's an inside joke. Bork sounds like "bark", but bork is most definitely a cat. 
@@ -28,20 +28,24 @@ If you don't use "bork" in your messages at least every six messages, **Bork won
 
 If you're good friends with Bork (>=100 friendship), then you only have to use "bork" every twelve messages. 
 
-### Random Borks
+### Random Borks Everywhere
 Everytime someone says anything, there's a relatively small (8%) chance that Bork will bork up and say "bork". 
-If Bork is in a voice channel (see commands), he'll also meow randomly for no reason. 
+If Bork is in a ~~voice~~ borking channel (see commands), he'll also meow (bork?) randomly for no reason. 
 
-### French Bork
-Bork is fluent in French, and will on occasion (10%) translate your messages into French for no reason. 
-If Bork doesn't like you (<0 friendship), then he'll also delete your message so your other friends won't understand you (unless they speak French, of course)
+### Multilingual Bork
+Bork is fluent in French, Spanish, German, and Japanese. On occasion (10% if you're on good terms, 25% if you have negative friendship), Bork will translate your messages into one of these languages for no reason. 
+
+If you're not on good terms with Bork (<10 friendship), then he'll also delete your original message so your other friends won't understand you (unless they speak such language, of course). 
 
 ### Bork Loves You
 If you get your friendship with Bork to 1,000, then he'll love you. Forever. That's right, once you reach 1,000, then the friendship can no longer go down no matter how many times you poke or slap him (trying to stab him will still make him retaliate). Other than that, not much else happens. 
 Potentially a reference to [Stardew Valley](https://stardewvalleywiki.com/Animals#Cat_or_Dog)
 
 ### Borkship
-At the heart of Bork is friendship points, already briefly mentioned above. Why? Because currency is overrated. Using `bork status` lets you see what Bork things of you (with pictures too!!!), and various commands can change your friendship with Bork. Does it actually mean anything? Not really. There's a few advantages here and there, but that's about it.
+At the heart of Bork is friendship points, already briefly mentioned above. Why? Because currency is overrated. Using `bork status` lets you see what Bork things of you (with pictures too!!!), and various commands can change your friendship with Bork. Does it actually mean anything? Well, maybe a little. There's a few advantages here and there, but that's about it.
+
+### Bork Abuse
+Malicious users can choose to take advantage of Bork's fighting capabilities to wreak havoc and mass delete messages. Anyone can get Bork to scrach at messages, but if you're good enough friends with Bork, he can wipe out up to 50 messages at once! 
 
 ### Commands
 All commands are prefixed with **bork**. Who needs random and confusing symbols?
@@ -61,6 +65,10 @@ All commands are prefixed with **bork**. Who needs random and confusing symbols?
 `bork poke`: pokes Bork. Decreases friendship (-5). 3 minute cooldown. 
 
 `bork slap`: slaps Bork. Significantly decreases friendship (-30). 10 minute cooldown. 
+
+`bork scratch`: makes Bork randomly scratch (delete) between one and five messages from the channel. 
+
+`bork nuke`: Bork borks into a borking frenzy! 10-50 messages will be deleted (you don't get to choose, Bork does what he wants). Requires 25 friendship. 
 
 `bork stab`: attempts to stab Bork. If you succeed, Bork will die and leave the server. However, if you fail, you'll be kicked from the server. 
 

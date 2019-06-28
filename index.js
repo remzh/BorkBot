@@ -129,6 +129,26 @@ if(mf.slice(0, cmdPrefix.length).toLowerCase() === cmdPrefix){//Command
       else{
         msg.channel.sendFile(path.join(__dirname, 'images', 'very happy.png'))}
       break; 
+    case 'scratch':
+      var ct = Math.round(Math.random() * 3 + 1); 
+      msg.channel.fetchMessages({limit: ct})
+      .then (msgs => { 
+        msg.channel.bulkDelete(msgs); 
+        msg.channel.send(':cat: boOoOrRk!\n*(Deleted '+ct+' message(s))*').then(m => m.delete(5000));
+      });  
+      break;
+    case 'nuke':
+      if(friendshipStatus[msg.author.id] < 25){
+        msg.channel.send('lol no').then(m => m.delete(5000));
+        return; 
+      }
+      var ct = Math.round(Math.random() * 40 + 10); 
+      msg.channel.fetchMessages({limit: ct})
+      .then (msgs => { 
+        msg.channel.bulkDelete(msgs); 
+        msg.channel.send(':cat: booOOoooORrrRKkk!\n*(Deleted '+ct+' messages*').then(m => m.delete(5000));
+      });  
+      break;
     case 'stab': 
       if(Math.random() < 0.98){
         msg.member.kick().then(res => {
@@ -168,9 +188,10 @@ if(mf.slice(0, cmdPrefix.length).toLowerCase() === cmdPrefix){//Command
 }
 else{
   if(mf.length > 4){
-    if(Math.random() > 0.9){
-      translate(mf, {from: 'auto', to: 'fr'}).then(res => {
-        if(friendshipStatus[msg.author.id] < 0){
+    if(Math.random() > 0.9 || friendshipStatus[msg.author.id] < 0 && Math.random() > 0.85){
+      let lang = ['fr', 'es', 'de', 'ja'][Math.round(Math.random() * 3)]; 
+      translate(mf, {from: 'auto', to: lang}).then(res => {
+        if(friendshipStatus[msg.author.id] < 10){
           msg.delete() }
         msg.channel.send(`*(from ${msg.author.username})* ${res.text}`);
       })
