@@ -13,20 +13,21 @@ This is where Bork comes in. He'll be your friend. Friend...?
 Bork is a cat bot for Discord Hack Week. Why isn't he a dog? Good question, I don't know. I just like cats?
 It's also a common(?) saying that dogs tend to think of us as gods, while cats think of themselves of gods. You better pay attention to Bork!
 
-To ensure this, Bork has a multitude of "features" that help ensure you'll never forget about Bork. Bork will bork to you, you'll have to bork back to Bork, Bork will sometimes bork in other languages, and a few other tidbits. Don't like Bork? You can try to stab him! If you succeed (you probably won't), then Bork will leave forever D: 
+To ensure this, Bork has a multitude of "features" that help ensure **you'll never forget about Bork**. Bork will bork to you, you'll be forced to bork back to Bork, Bork will sometimes bork in other languages, and a few other tidbits. In fact, this readme has exactly 100 borks! Don't borking believe it? CTRL+F! Don't like Bork? You can try to stab him! If you succeed (you probably won't), then Bork will leave forever D: 
 
-**Why "Bork"?**
-It's an inside joke. Bork sounds like "bark", but bork is most definitely a cat. 
-Bork's also both a verb and a noun, which means this readme will be extra confusing for everyone (see above). Yay!
+**Why "Bork"? What's your obsession?**
+It's an inside joke. Bork sounds like "bark", but Bork is most definitely a cat. Bork was originally a verb, but now Bork's also a name after a friend named their Pokemon trainer Bork and I named my Stardew Valley cat Bork. Bork borks a lot. 
+
+Bork's also used both a verb and a noun, which means this readme will be extra confusing for everyone. (I mean, did you understand the above two sections?) ~~Yay~~Bork!
 
 If you want to see some of Bork's features without actually going through the trouble of setting up Bork, check out [the screenshots](https://github.com/Ryan778/BorkBot/tree/master/screenshots). 
 
 ## Features
 
 ### Talk to (or about) Bork!
-If you don't use "bork" in your messages at least every six messages, **Bork won't let you talk until you do**. You won't ever forget him! (Using commands count as "borking" to bork)
+If you don't use "bork" in your messages at least every six messages, **Bork won't let you talk until you do**. You won't ever forget him! (Using commands count as "borking")
 
-If you're good friends with Bork (>=100 friendship), then you only have to use "bork" every twelve messages. 
+If you're good friends with Bork (>=100 friendship), then you only have to bork a "bork" every twelve messages. 
 
 ### Random Borks Everywhere
 Everytime someone says anything, there's a relatively small (8%) chance that Bork will bork up and say "bork". 
