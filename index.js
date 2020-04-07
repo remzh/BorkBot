@@ -74,7 +74,7 @@ if(!friendshipStatus[msg.author.id]){
 
 if(borkCount[msg.author.id] >= 6 && friendshipStatus[msg.author.id] < 100 || borkCount[msg.author.id] >= 12){
   msg.delete(); 
-  msg.channel.send('bORK! *(you\'re not paying enough attention to bork! use his name more!)*').then(m => m.delete(5000));
+  msg.channel.send('bORK! *(you\'re not paying enough attention to bork! use his name more!)*').then(m => m.delete({timeout: 5000, reason: "did not pay enough attention to the great bork"}));
 }
 
 if(mf.slice(0, cmdPrefix.length).toLowerCase() === cmdPrefix){//Command
@@ -84,7 +84,7 @@ if(mf.slice(0, cmdPrefix.length).toLowerCase() === cmdPrefix){//Command
   logCmd(msg);
   switch(mspl[0].toLowerCase()){  
     case 'help': 
-      msg.channel.send('go read the readme, bork');
+      msg.channel.send('go read the readme (https://l.itsryan.org/bork), bork');
       friendshipStatus[msg.author.id] -= 3; 
       break;
     case 'bork': 
@@ -121,13 +121,13 @@ if(mf.slice(0, cmdPrefix.length).toLowerCase() === cmdPrefix){//Command
       let frs = friendshipStatus[msg.author.id]; 
       msg.reply(`you have ${(frs < 1000?frs:'∞')} friendship points with Bork!`);
       if(frs < -30){
-        msg.channel.sendFile(path.join(__dirname, 'images', 'mad.png'))}
+        msg.channel.send({files: [path.join(__dirname, 'images', 'mad.png')]})}
       else if(frs < 0){
-        msg.channel.sendFile(path.join(__dirname, 'images', 'unhappy.png'))}
+        msg.channel.send({files: [path.join(__dirname, 'images', 'unhappy.png')]})}
       else if(frs < 100){
-        msg.channel.sendFile(path.join(__dirname, 'images', 'happy.png'))}
+        msg.channel.send({files: [path.join(__dirname, 'images', 'happy.png')]})}
       else{
-        msg.channel.sendFile(path.join(__dirname, 'images', 'very happy.png'))}
+        msg.channel.send({files: [path.join(__dirname, 'images', 'very happy.png')]})}
       break; 
     case 'scratch':
       var ct = Math.round(Math.random() * 3 + 1); 
@@ -164,8 +164,8 @@ if(mf.slice(0, cmdPrefix.length).toLowerCase() === cmdPrefix){//Command
       }  
       break;
     case 'vc':
-      if(msg.member.voiceChannel){
-        msg.member.voiceChannel.join()
+      if(msg.member.voice && msg.member.voice.channel){
+        msg.member.voice.channel.join()
         .then(connection => { // Connection is an instance of VoiceConnection
           voiceConnection = connection;
           msg.reply('borked into a borking channel!');
@@ -180,7 +180,11 @@ if(mf.slice(0, cmdPrefix.length).toLowerCase() === cmdPrefix){//Command
       if(voiceConnection){
         voiceConnection.disconnect(); 
         delete voiceConnection;
-        friendshipStatus[msg.author.id] -= 3; 
+        if(friendshipStatus[msg.author.id] < 100){
+          friendshipStatus[msg.author.id] -= 3; 
+        } else{
+          friendshipStatus[msg.author.id] -= 1; 
+        }
         msg.channel.send(`Borked out of the borking channel!`);
       }
       break;
@@ -210,7 +214,7 @@ if(friendshipStatus[msg.author.id] >= 1000 && friendshipStatus[msg.author.id] < 
 setInterval(function(){ // random meowing
   if(voiceConnection){
     if(Math.random() > 0.92){
-      voiceConnection.playFile(path.join(__dirname, 'meow.mp3'));
+      voiceConnection.play(path.join(__dirname, 'meow.mp3'));
     }
   }
 }, 3000); 

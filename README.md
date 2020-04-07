@@ -88,6 +88,15 @@ Bork is very aggressive when need be, which is why there's a 98% chance that you
 - Bork stores friendship data in memory. If you stop the bot, you'll lose friendship values. 
 - There's no guarantee that the bot won't spontaneously combust, despite the (quite possibly excessive) amount of effort I put into making a (near) useless bot and a fancy readme file. 
 
+## Changelog
+### v1.1 (4.7.2020)
+- Turns out there's some high security vulnerabilities in the old dependencies. Oops! That's been fixed with package updates all across. 
+ - Updated to use Discord.js 0.12 instead of 0.11, which they claim is more stable (especially with file handling, due to the deprecation of their old methods)
+- Minor change: If you have at least 100 friendship and ask Bork to leave the voice channel, it'll only cost 1 friendship instead of 3. 
+
+### v1.0 (6.28.2019)
+- Original release. Didn't plan on updating it ever again, yet here I am. 
+
 ### Third-Party Libraries
 - Bork images are from [Freepik](https://www.freepik.com/free-vector/flat-pack-cute-cat-emojis_1001312.htm) and are licensed under Creative Commons. 
 - The meow sound is from [FreeSounds](https://freesound.org/people/tuberatanka/sounds/110011/) and is licensed under CC0
